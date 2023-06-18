@@ -37,33 +37,3 @@ if (args._.includes("add") || args._.includes("sub")) {
 } else {
   console.log(responce);
 }
-
-// if (args.year || args.y) {
-//   if (args._.includes("add")) {
-//     console.log(new Date().getFullYear() + args.y);
-//   } else if (args._.includes("sub")) {
-//     console.log(new Date().getFullYear() - args.y);
-//   } else {
-//     console.log(new Date().getFullYear());
-//   }
-// }
-// if (args.month || args.m) {
-//   if (args._.includes("add")) {
-//     console.log(new Date().getMonth() + args.m + 1);
-//   } else if (args._.includes("sub")) {
-//     console.log(new Date().getMonth() - args.m + 1);
-//   } else {
-//     console.log(new Date().getMonth() + 1);
-//   }
-// }
-// if (args.date || args.d) {
-//   if (args._.includes("add")) {
-//     console.log(new Date().getDate() + args.d);
-//   } else if (args._.includes("sub")) {
-//     console.log(new Date().getDate() - args.d);
-//   } else {
-//     console.log(new Date().getDate());
-//   }
-// }
-
-// console.log(yargs(hideBin(process.argv)).argv);
