@@ -1,15 +1,12 @@
-const readLine = require("readline");
+import readLine from "readline";
+import checkAnswer from "./checkAnswer.js";
+import { initText } from "./data.js";
 const input = readLine.createInterface(process.stdin);
 let randomNumber = Math.floor(Math.random() * 100);
+console.log(initText);
+
 let counter = 1;
-console.log(
-  "Давай сыграем в игру? Я загадал число от 0 до 100, угадай его, а я буду тебе подсказывать"
-);
-const checkAnswer = (answer) => {
-  return isFinite(answer)
-    ? answer
-    : console.log(`Ну вообще то '${answer} это не число`);
-};
+
 input.on("line", (answer) => {
   checkAnswer(answer);
   if (answer > randomNumber) {
